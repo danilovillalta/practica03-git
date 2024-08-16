@@ -1,0 +1,333 @@
+/* 0. Reset */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 1. Layout */
+body {
+    text-align: center;
+    font:300 20px/1.7 'Roboto Condensed';
+  }
+
+  
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #abcdef;
+  }
+
+  .barra{
+    position: relative;
+  }
+
+  .barra.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+
+  
+  /* ///////////////////////////////////////////////// */
+
+/* Estilo por defecto (barra no fija) */
+/* .barra {
+  position: relative;
+} */
+
+/* Estilo cuando la barra es fija */
+
+/* .barra.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+} */
+/* Cambia el color de fondo si es necesario */
+  /* ///////////////////////////////////////////////// */
+
+
+
+  .tarifas { 
+    text-align: left;
+  }
+  
+  .list-services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .list-services figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  /* 2. Items Genéricos */
+.header {
+    height: 450px;
+    background: url(../img/dummy-header.jpg) no-repeat center top;
+    background-size: cover;
+  }
+  
+  .navbar {
+    height: 63px;
+    background: #2c3e50;
+    border-bottom: 1px dashed #3498db;
+  }
+  
+  .navbar a {
+    padding: 0 20px; color: #fff; text-decoration: none;
+    text-transform: uppercase;
+    font: 20px 'Stint Ultra Condensed';
+  }
+  
+  .title {margin-bottom: 40px; 
+    font: 60px 'Stint Ultra Condensed'; 
+    text-transform: uppercase;
+  }
+  
+  p {
+    margin-bottom: 40px;
+  }
+  
+  .btn {border: 2px solid #fff; 
+    padding: 10px 40px; 
+    display: inline-block; 
+    text-decoration: none; 
+    color: #fff;
+  }
+
+  /* 3. Partes Esenciales de la Web */
+.content {
+    padding: 80px 0;
+  }
+
+.who {
+    background: #2c3e50;
+    color: #fff;
+  }
+  
+  .who p {
+    max-width: 1055px;
+    margin: 0 auto;
+  }
+  
+  .services {
+    background: #34495e;
+    color: #fff;
+  }
+  
+  .tarifas {
+    background: url(../img/dummy-tarifas.jpg) no-repeat center top;
+    background-size: cover;
+    color: #fff;
+  }
+  
+  .contain {
+    max-width: 1055px;
+    margin: 0 auto;
+  }
+  
+  .tarifas p {
+    max-width: 450px;
+  }
+  
+  .localization {
+    color: #34495e;
+    padding-bottom: 0;
+  }
+  
+  .localization .map img {
+    max-width: 100%; 
+    width: 100%;
+  }
+
+  /* 4. Listas  */
+.list-services figure {
+    position: relative;
+    width: 150px; 
+    height: 190px;
+  }
+  
+  .list-services figure:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    z-index: 0;
+    background: #fff;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .list-services img {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .list-services li {
+    padding: 0 30px;
+  }
+  
+  .list-services figcaption {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: -40px;
+  }
+  /* 5. Estilos para el formulario de contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto 40px; /* Añadido margen inferior para separar del footer */
+  }
+  
+  form label {
+    margin: 10px 0 5px;
+  }
+  
+  form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background: #555;
+  }
+
+  /* 6. Estilos para el mapa */
+#map {
+    width: 100%;
+    height: 425px;
+    /* background: url(../img/dummy-mapav1.png) no-repeat center center; */
+    background-size: cover;
+  }
+
+  /* 7. Estilos para el bloque de opiniones */
+.opiniones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .opinion-box {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    max-width: 300px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .opinion-box blockquote {
+    margin: 0;
+  }
+  
+  .opinion-box cite {
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+    color: #555;
+  }
+
+
+/* 8. Estilos para el footer */
+.footer {
+  background: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-nav {
+  margin-top: 10px;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
